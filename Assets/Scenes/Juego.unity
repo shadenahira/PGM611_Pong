@@ -659,6 +659,7 @@ GameObject:
   - component: {fileID: 817896037}
   - component: {fileID: 817896036}
   - component: {fileID: 817896038}
+  - component: {fileID: 817896039}
   m_Layer: 0
   m_Name: Jugador2
   m_TagString: Untagged
@@ -786,6 +787,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &817896039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817896035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5061be9c213d2624f8c421b589d77fd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Paleta
+  velocidad: 7
+  jugador1: 0
 --- !u!1 &1241855156
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,6 +812,7 @@ GameObject:
   - component: {fileID: 1241855158}
   - component: {fileID: 1241855157}
   - component: {fileID: 1241855159}
+  - component: {fileID: 1241855160}
   m_Layer: 0
   m_Name: Jugador1
   m_TagString: Untagged
@@ -924,6 +940,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1241855160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241855156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5061be9c213d2624f8c421b589d77fd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Paleta
+  velocidad: 7
+  jugador1: 1
 --- !u!1 &1430212151
 GameObject:
   m_ObjectHideFlags: 0
