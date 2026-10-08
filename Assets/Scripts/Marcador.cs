@@ -7,6 +7,10 @@ public class Marcador : MonoBehaviour
     public TMP_Text textoJugador2;
     public TMP_Text textoGanador;
 
+    // Panel que aparece cuando termina la partida
+    public GameObject panelFinPartida;
+
+
     // Sonido de victoria
     public AudioClip sonidoGanador;
 
@@ -25,6 +29,12 @@ public class Marcador : MonoBehaviour
 
         // Ocultar mensaje al comenzar
         textoGanador.gameObject.SetActive(false);
+
+        // Ocultar el panel de final de partida
+        if (panelFinPartida != null)
+        {
+            panelFinPartida.SetActive(false);
+        }
 
         // Asegurarnos de que el tiempo esté funcionando
         Time.timeScale = 1f;
@@ -61,6 +71,12 @@ public class Marcador : MonoBehaviour
     void FinalizarJuego(string mensaje)
     {
         juegoTerminado = true;
+
+        // Mostrar el panel de final de partida
+        if (panelFinPartida != null)
+        {
+            panelFinPartida.SetActive(true);
+        }
 
         // Mostrar ganador
         textoGanador.text = mensaje;
